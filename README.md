@@ -46,7 +46,8 @@ Route::delete('/students/{id}', [studentController::class,'destroy']);
 Ejemplos:
 get all students
     http://127.0.0.1:8000/api/students/
-        {
+{
+    {
         "students": [
             {
                 "id": 3,
@@ -69,7 +70,7 @@ get all students
         ],
         "status": 200
     }
-
+}
 get{id}
     http://127.0.0.1:8000/api/students/3
 
@@ -94,7 +95,7 @@ delete
 
 post
     http://127.0.0.1:8000/api/students/
-
+{
     input:
     {   
             "name": "nicolas",
@@ -102,7 +103,7 @@ post
             "phone": "53965244581",
             "language": "Spanish"
     }
-
+}
     output:
     {
         "students": {
