@@ -15,13 +15,15 @@ Give examples
 
 Installing
 
-1.- Configura tu base de datos en ".env" 
-    DB_CONNECTION=mysql ->(cualquiera que gustes)
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE=laravel
-    DB_USERNAME=root
+1.- Configura tu base de datos en ".env"
+    {
+    DB_CONNECTION=mysql (cualquiera que gustes),
+    DB_HOST=127.0.0.1,
+    DB_PORT=3306,
+    DB_DATABASE=laravel,
+    DB_USERNAME=root,
     DB_PASSWORD=
+    }
 2.- crea tu base de datos
 3.- "php artisan migrate" en terminal 
 4.- "php artisan serve" en terminal
@@ -44,8 +46,9 @@ Route::delete('/students/{id}', [studentController::class,'destroy']);
 
 
 Ejemplos:
-get all students
+get all students:
     http://127.0.0.1:8000/api/students/
+
 {
     {
         "students": [
